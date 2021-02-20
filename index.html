@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <style>
+    #page-container {
+        position: relative;
+        min-height: 100vh;
+    }
+    #content-wrap {
+        padding-bottom: 2.5rems;
+    }
     a:hover {
         text-decoration: underline;
     }
@@ -78,18 +85,24 @@
         font-size: 13px;
         font-family: Arial, Helvetica, sans-serif;
     }
+    #foot {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .footer {
-        display: flex-row;
-        vertical-align: bottom;
-        height: 1px;
+        position: absolute;
+        bottom: 0;
         opacity: 0.5;
         text-align: center;
     }
 </style>
 <body>
+    <div id="page-container">
+        <div id="content-wrap">
     <header>
         <nav>
-            <div ><ul>
+            <div><ul>
                 <li><a style="float: left; position: relative; top: 10px; left: 10px;" href="#">About</a></li>
                 <li><a style="float: left; position: relative; top: 10px; left: 30px;" href="#">Store</a></li>
                 <li><a style="float: right; position: relative; top: 10px; right: 210px;" href="#">Gmail</a></li>
@@ -113,8 +126,10 @@
 <div>
     <a class="help" href="#">However learning happens, we're here to help</a>
 </div>
-<footer class="footer">
-    <a href="#">Carbon neutral since 2007</a>
+</div>
+<footer id="foot" class="footer">
+    <div>
+        <a href="#">Carbon neutral since 2007</a>
    <ul>
        <li style="padding: 5px;"><a href="#">Advertising</a></li>
        <li><a href="#">Business</a></li>
@@ -123,6 +138,8 @@
        <li><a href="#">Terms</a></li>
        <li><a href="#">Settings</a></li>
    </ul> 
+   </div>
 </footer>
+</div>
 </body>
 </html>
