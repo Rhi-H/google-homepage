@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <style>
+    a:hover {
+        text-decoration: underline;
+    }
     ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
+        text-align: center;
     }
-    
+    li {
+        display: inline;
+        padding: 12px;
+        font-size: 14px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        text-align: center;
+    }
+    input:hover {
+        box-shadow: 1px 1px 1px 1px;
+        opacity: 0.2;
+    }
     .logo {
-        display: flex;
-        justify-content: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        padding-top: 40px;
     }
     .search_bar {
         display: flex;
@@ -18,25 +40,70 @@
     .box {
         height: 40px;
         width: 800px;
+        border-style: solid;
+        border-radius: 40px;
+        border-width: 1px;
+        opacity: 0.3;
+        border-color: rgb(88, 88, 88)
     }
     .button {
-        
+        background-color: #3577f0;
+        border-style: none;
+        border-radius: 5px;
+        width: 80px;
+        height: 40px;
+        font-size: 15px;
+        color: white;
+        float: right;
+        position: relative; top: -20px; right: 10px;
     }
-    
+    .help {
+        color: blue;
+        position: relative; top: 30px; left: 170px;
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .footer {
+        opacity: 0.5;
+        text-align: center;
+    }
 </style>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Store</a></li>
+            <div ><ul>
+                <li><a style="float: left; position: relative; top: 10px; left: 10px;" href="#">About</a></li>
+                <li><a style="float: left; position: relative; top: 10px; left: 30px;" href="#">Store</a></li>
+                <li><a style="float: right; position: relative; top: 10px; right: 200px;" href="#">Gmail</a></li>
+                <li><a style="float: right; position: relative; top: 10px; right: 90px;" href="#">Images</a></li>
             </ul>
+            <button class="button" type="Sign in">Sign in</button>
+            </div>
 </nav>
     </header>
-        <a class="logo" href=""><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo"></a>
+        <a  class="logo" href=""><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo"></a>
 <div class="search_bar">
-    <button class="button" type="submit"><img scr="https://cdn.picpng.com/magnifying_glass/small/magnifying-glass-search-46648.png"></button>
 <input type="text" class="box" required>
 </div>
+<div>
+    <ul>
+        <li><a href="#">Google Search</a></li>
+        <li><a herf="#">I'm Feeling Lucky</a></li>
+    </ul>
+</div>
+<div>
+    <a class="help" href="#">However learning happens, we're here to help</a>
+</div>
+<footer class="footer">
+    <a href="#">Carbon neutral since 2007</a>
+   <ul>
+       <li style="padding: 5px;"><a href="#">Advertising</a></li>
+       <li><a href="#">Business</a></li>
+       <li><a href="#">How Search Works</a></li>
+       <li><a href="#">Privacy</a></li>
+       <li><a href="#">Terms</a></li>
+       <li><a href="#">Settings</a></li>
+   </ul> 
+</footer>
 </body>
 </html>
